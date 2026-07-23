@@ -114,3 +114,102 @@ nav a {
 footer p {
   font-size: 1.4rem;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0 3rem;
+}
+
+th,
+td {
+  padding: 1rem 1.5rem;
+  border: 1px solid #e6d9c8;
+  text-align: left;
+}
+
+thead tr {
+  background-color: #050302;
+  color: #f5ede2;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5ede2;
+}
+
+fieldset {
+  border: 1px solid #e6d9c8;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+legend {
+  font-family: "Playfair Display", serif;
+  color: #9f6b2a;
+  padding: 0 0.5rem;
+}
+
+label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-weight: 700;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0.8rem 0;
+}
+
+.choice label {
+  display: inline;
+  margin: 0;
+  font-weight: 400;
+}
+
+.field {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e6d9c8;
+  border-radius: 4px;
+  max-width: 400px;
+  width: 100%;
+}
+
+textarea.field {
+  min-height: 8rem;
+}
+
+input,
+textarea,
+select {
+  accent-color: #9f6b2a;
+}
+
+.field:focus {
+  outline: 2px solid #9f6b2a;
+  outline-offset: 2px;
+}
+
+.field:required {
+  border-left: 3px solid #8c2d1e;
+}
+
+button[type="submit"] {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: #050302;
+  color: #f5ede2;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #2a1a12;
+}
