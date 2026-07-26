@@ -1,55 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu — Maison Sarah</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1 class="brand">Maison Sarah</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="order.html">Order</a></li>
-        </ul>
-      </nav>
+      <div class="container header-bar">
+        <h1 class="brand">Maison Sarah</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="order.html">Order</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <h2>Our Menu</h2>
-      <p class="tagline">Baked fresh every morning, from bread to pastry to cake.</p>
+      <div class="container">
+        <h2>Our Menu</h2>
+        <p class="tagline">
+          Baked fresh every morning, from bread to pastry to cake.
+        </p>
 
-      <ul>
-        <li>
-          Breads
-          <ul>
-            <li>Sourdough loaf — <span class="price">€5.50</span></li>
-            <li>Baguette — <span class="price">€1.80</span></li>
-            <li>Rye loaf — <span class="price">€6.00</span></li>
-          </ul>
-        </li>
-        <li>
-          Pastries
-          <ul>
-            <li>Croissant — <span class="price">€2.20</span></li>
-            <li>Pain au chocolat — <span class="price">€2.50</span></li>
-            <li>Almond croissant — <span class="price">€3.00</span></li>
-          </ul>
-        </li>
-        <li>
-          Cakes
-          <ul>
-            <li>Lemon tart — <span class="price">€4.50</span></li>
-            <li>Chocolate éclair — <span class="price">€3.80</span></li>
-          </ul>
-        </li>
-      </ul>
+        <ul>
+          <li>
+            Breads
+            <ul>
+              <li>Sourdough loaf — <span class="price">€5.50</span></li>
+              <li>Baguette — <span class="price">€1.80</span></li>
+              <li>Rye loaf — <span class="price">€6.00</span></li>
+            </ul>
+          </li>
+          <li>
+            Pastries
+            <ul>
+              <li>Croissant — <span class="price">€2.20</span></li>
+              <li>Pain au chocolat — <span class="price">€2.50</span></li>
+              <li>Almond croissant — <span class="price">€3.00</span></li>
+            </ul>
+          </li>
+          <li>
+            Cakes
+            <ul>
+              <li>Lemon tart — <span class="price">€4.50</span></li>
+              <li>Chocolate éclair — <span class="price">€3.80</span></li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>Weekend specials</h2>
+        <div class="card-row">
+          <article class="card">
+            <img
+              src="images/bakery-bread.jpg"
+              alt="A row of freshly baked golden loaves of bread cooling on a wooden rack."
+            />
+            <h3>Sourdough loaf</h3>
+            <p class="price">€5.50</p>
+          </article>
+          <article class="card">
+            <img
+              src="images/bakery-bread.jpg"
+              alt="A row of freshly baked golden loaves of bread cooling on a wooden rack."
+            />
+            <h3>Almond croissant</h3>
+            <p class="price">€3.00</p>
+          </article>
+          <article class="card">
+            <img
+              src="images/bakery-bread.jpg"
+              alt="A row of freshly baked golden loaves of bread cooling on a wooden rack."
+            />
+            <h3>Chocolate éclair</h3>
+            <p class="price">€3.80</p>
+          </article>
+        </div>
+        <h2>Opening hours</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>Closed</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>7:00 – 19:00</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>7:00 – 19:00</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>7:00 – 19:00</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>7:00 – 19:00</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>8:00 – 18:00</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>8:00 – 13:00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Price list</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sourdough loaf</td>
+              <td>€5.50</td>
+            </tr>
+            <tr>
+              <td>Baguette</td>
+              <td>€1.80</td>
+            </tr>
+            <tr>
+              <td>Rye loaf</td>
+              <td>€6.00</td>
+            </tr>
+            <tr>
+              <td>Croissant</td>
+              <td>€2.20</td>
+            </tr>
+            <tr>
+              <td>Pain au chocolat</td>
+              <td>€2.50</td>
+            </tr>
+            <tr>
+              <td>Almond croissant</td>
+              <td>€3.00</td>
+            </tr>
+            <tr>
+              <td>Lemon tart</td>
+              <td>€4.50</td>
+            </tr>
+            <tr>
+              <td>Chocolate éclair</td>
+              <td>€3.80</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
 
     <footer>
